@@ -1,0 +1,92 @@
+//flex布局和子元素对其方式
+@mixin fja($jtype: space-between, $atype: center){
+	display: flex;
+	justify-content: $jtype;
+	align-items: $atype;
+}
+
+@mixin flexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flexRow {
+	display: flex;
+	flex-direction: row;
+}
+
+@mixin flexColumn {
+	display: flex;
+	flex-direction: column;
+}
+
+//显示2行或多行，超出部分省略号显示
+@mixin ellipsis($lineClamp: 2) {
+	overflow: hidden;
+	word-break: break-all;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: $lineClamp;
+	-webkit-box-orient: vertical;
+}
+
+// 背景图片地址和大小
+@mixin baseBg($url) { 
+	// background: url($url) no-repeat center center;
+	background-image: url($url);
+	// background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+}
+
+// 边框圆角
+@mixin borderRadius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+//全屏
+@mixin allCover{
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+//定位上下左右居中
+@mixin center {
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//垂直居中
+@mixin centerTB {  
+	position: absolute;
+	top: 50%;
+  transform: translateY(-50%);
+}
+
+//水平居中
+@mixin centerLR {  
+	position: absolute;
+	left: 50%;
+  transform: translateX(-50%);
+}
+
+//宽高
+@mixin wh($width, $height){
+	width: $width;
+	height: $height;
+}
+
+//字体大小，颜色
+@mixin fontSC($size, $color){
+	font-size: $size;
+	color: $color;
+}
+
