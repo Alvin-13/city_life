@@ -1,7 +1,6 @@
 # citylife
 
-> A Vue.js project for learnig (vue2)
-> imitate Meituan
+> A Vue.js project for learnig. (vue2)
 
 ## Build Setup
 
