@@ -1,6 +1,6 @@
 # citylife
 
-> A Vue.js project for learnig. (vue2)
+> A Vue.js project. (vue2)
 
 ## Build Setup
 
